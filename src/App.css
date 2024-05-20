@@ -1,0 +1,330 @@
+:root{
+  --fontc:rgb(255, 255, 255);
+  --fonts1:1rem;
+  --fonts2:4dvh;
+  --fonts3:3rem;
+  --fonts4:4rem;
+  --marg:1.5rem;
+  --border-radius: 1rem;
+}
+
+@font-face {
+  font-family: trap;
+  src: url(Trap-Regular.otf);
+}
+
+body{
+ overflow: hidden;
+ /* background: url(1.jpg); */
+ background-position: center;
+ background-size: cover;
+ color: var(--fontc);
+ background: black;
+ font-family: trap;
+
+
+}
+
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.searchbar{
+  width: 80%;
+  background: rgb(255, 255, 255);
+  height: 10%;
+  margin: 10px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  
+  
+}
+
+
+
+
+.searchbar input{
+  width: 100%;
+  margin: 10px;
+  margin-left: 30px;
+  background: transparent;
+  border: none;
+  color: black;  
+  display: flex;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.searchbar img{
+  height: 60%;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.searchbar input::after{
+  border: none;
+}
+
+.searchbar input::placeholder{
+  color: black;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.subcontainer{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color:hsla(257,0%,0%,1);
+  background-image:
+  radial-gradient(at 19% 81%, hsla(353,61%,27%,1) 0px, transparent 50%),
+  radial-gradient(at 99% 84%, hsla(255,49%,23%,1) 0px, transparent 50%),
+  radial-gradient(at 71% 40%, hsla(195,43%,47%,0.61) 0px, transparent 50%),
+  radial-gradient(at 48% 90%, hsla(0,38%,33%,1) 0px, transparent 50%);
+  
+}
+.itemcon1{
+  display: flex;
+  position: relative;
+  /* background: rgb(0, 68, 255); */
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemcon1 h1 {
+  font-size: 7rem;
+  color: var(--fontc);
+  margin: var(--marg);
+
+}
+
+
+.itemcon1 h2{
+  margin: var(--marg);
+  font-size: var(--fonts3);
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.itemcon1 h2 img{
+height: 50px;
+
+}
+
+.icon-con{
+  display: flex;
+  position: relative;
+  /* background: rgb(255, 255, 255); */
+  width: 380px;
+  height: 220px;
+  margin: 30px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  /* color: rgb(255, 255, 255); */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgb(0, 0, 0);
+  
+  text-transform: uppercase;
+ 
+  animation: pop 5s infinite;
+  transition:  ease-in-out;
+  
+
+}
+
+@keyframes pop {
+  0%{
+    scale: 1;
+  }
+
+  50%{
+    scale: 1.1;
+  }
+
+}
+
+@keyframes loc {
+  0%{
+    scale: 1;
+  }
+
+  100%{
+    scale: 1.1;
+  }
+}
+
+
+.icon-con img{
+  width: 170px;
+  margin-bottom: 60px;
+  filter: invert(100%);
+}
+
+.icon-con p{
+  position: absolute;
+  bottom: -4%;
+  font-size: var(--fonts2);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+
+.itemcon2{
+  /* background: rgba(247, 0, 255, 0.568); */
+  width: 100%;
+  height: 50%;
+  color: var(--fontc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.subitem1 {
+  background: violet;
+  width: 30%;
+  height: 60%;
+  gap: 0;
+  color: var(--fontc);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: var(--marg);
+}
+
+.subitem1 p{
+  font-size: var(--fonts2);
+  margin: var(--marg);
+}
+
+.subitem1 p:nth-child(2){
+  font-style: italic;
+  font-size: var(--fonts4);
+}
+
+.humi{
+  background: url(https://goblueox.com/wp-content/uploads/2019/08/1-1.jpg);
+  background-position: center;
+  background-size: 170%;
+  background-repeat: no-repeat;
+}
+
+
+.wind{
+  background: url(https://caltechsites-prod.s3.amazonaws.com/scienceexchange/images/wind-turbine-future-energy.2e16d0ba.fill-933x525-c100.jpg);
+  background-position: center;
+  background-size: 170%;
+  background-repeat: no-repeat;
+
+}
+
+.gust{
+  background: url(https://blog.otthydromet.com/wp-content/uploads/2020/01/strong_wind-1.jpg);
+  background-position: center;
+  background-size: 170%;
+  background-repeat: no-repeat;
+
+}
+
+
+@media only screen and (max-width: 945px) {
+
+
+  body{
+    overflow-y: scroll;
+  }
+
+  .maincontainer{
+    height: max-content;
+  }
+
+  .subcontainer{
+    height: max-content;
+    
+  }
+  .searchbar img{
+    height: 5dvh;
+  }
+  .itemcon2{
+    flex-direction: column;
+    height: max-content;
+    
+  }
+  
+
+  .subitem1{
+    height: max-content;
+    width: 80%;
+    margin-bottom: 30px;
+    
+  }
+  .subitem1 p:nth-child(2){
+    font-size: var(--fonts2);
+  }
+  .itemcon1{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .icon-con{
+    width: 60dvw;
+    border: 2px black solid;
+
+  }.subitem1{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .subitem1 p{
+    font-size: 3dvh;
+  }
+}
+
+@media only screen and (max-width: 890px){
+
+.itemcon1 h1{
+  font-size: var(--fonts3);
+  font-style: italic;
+}
+
+.itemcon1 h2{
+  font-size: var(--fonts2);
+}
+  
+}
+
+@media only screen and (max-width: 585px){
+
+
+  .subitem1{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .subitem1 p{
+    font-size: 3dvh;
+  }
+
+}
+
