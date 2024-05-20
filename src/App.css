@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+@font-face {
+  font-family: trap;
+  src: url(Trap-Regular.otf) ;
+}
+
 :root{
   --fontc:rgb(255, 255, 255);
   --fonts1:1rem;
@@ -8,10 +15,8 @@
   --border-radius: 1rem;
 }
 
-@font-face {
-  font-family: trap;
-  src: url(Trap-Regular.otf);
-}
+
+
 
 body{
  overflow: hidden;
@@ -318,8 +323,13 @@ height: 50px;
 
 @media only screen and (max-width: 585px){
 
+  body{
+    overflow-x: hidden;
+    font-family: "Metrophobic", sans-serif;
+  }
+
 .subcontainer{
-  width: 100%;
+  width: 100dvw;
   margin: 0;
 }
   .subitem1{
