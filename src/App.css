@@ -310,12 +310,18 @@ height: 50px;
 .itemcon1 h2{
   font-size: var(--fonts2);
 }
+.icon-con p{
+  font-size: 30px;
+}
   
 }
 
 @media only screen and (max-width: 585px){
 
-
+.subcontainer{
+  width: 100%;
+  margin: 0;
+}
   .subitem1{
     display: flex;
     justify-content: space-around;
@@ -324,6 +330,10 @@ height: 50px;
 
   .subitem1 p{
     font-size: 3dvh;
+  }
+
+  .icon-con p{
+    font-size: 25px;
   }
 
 }
